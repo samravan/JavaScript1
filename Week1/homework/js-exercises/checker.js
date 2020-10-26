@@ -9,27 +9,37 @@ console.log(typeof(x4));
 function compare () {
     if (typeof(x1) == typeof(x2)) {
         console.log("SAME TYPE");
-        }
+        } else {
         console.log("NOT THE SAME TYPE")
+    }
     if (typeof(x1) == typeof(x3)) {
         console.log("SAME TYPE");
-        }
+    } else {
         console.log("NOT THE SAME TYPE")
+    }
+
     if (typeof(x1) == typeof(x4)) {
         console.log("SAME TYPE");
+          } else {
+            console.log("NOT THE SAME TYPE")
         }
-        console.log("NOT THE SAME TYPE")
+
     if (typeof(x2) == typeof(x3)) {
         console.log("SAME TYPE");
-        }
+    } else {
         console.log("NOT THE SAME TYPE")
+    }
+        
     if (typeof(x2) == typeof(x4)) {
         console.log("SAME TYPE");
-        }
+    } else {
         console.log("NOT THE SAME TYPE")
+    }
+
     if (typeof(x3) == typeof(x4)) {
         console.log("SAME TYPE");
-        }
+          } else {
         console.log("NOT THE SAME TYPE")
+    }
 }
 compare()
