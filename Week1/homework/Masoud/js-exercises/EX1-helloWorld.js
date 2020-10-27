@@ -1,4 +1,5 @@
 'use strict';
+
 console.log("Hello world!");
 console.log("دنیا سلام!");
 console.log("مرحبا بالعالم!");
