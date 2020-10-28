@@ -38,7 +38,7 @@ function compare () {
 
     if (typeof(x3) == typeof(x4)) {
         console.log("SAME TYPE");
-          } else {
+    } else {
         console.log("NOT THE SAME TYPE")
     }
 }
