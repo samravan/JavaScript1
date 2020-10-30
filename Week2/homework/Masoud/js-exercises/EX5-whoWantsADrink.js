@@ -14,9 +14,3 @@ for(let i = 0 ; i < 5 ; i++) {
 }
 
 console.log('Hey guys, I brought a ' + drinkTray + '!');
-
-
-// for(let i = 0 ; i < 5 ; i++) {
-//   randomNum = Math.round(Math.random()*2);
-//   drinkTray.push(drinkTypes[randomNum]);
-// }
