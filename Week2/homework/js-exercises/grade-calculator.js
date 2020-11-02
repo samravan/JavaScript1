@@ -1,4 +1,4 @@
-function grades(gradeInput) {
+function calculategrades(gradeInput) {
     let gPercent = `${(gradeInput * 100) / 100}%`; //using this calculation to make the percentage of the grade.
     switch (Math.floor(gradeInput/10)) {    //Using Math.floor to round grades to largest integer and then read the reletive condition in the switch.
         case 9:
@@ -33,6 +33,7 @@ function grades(gradeInput) {
         break;
     }
 }
-grades(96);
+calculategrades(96);
 
+console.log(`${grades(1)}`)
 
