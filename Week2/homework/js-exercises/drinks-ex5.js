@@ -5,7 +5,8 @@ for (let i = 0; i < 5; i++) {
     drinkTray.push( " " + drinkTypes[num]);
     if (i % 2 !== 0) {
         num++
-    } 
-};
+    };
+}
 
-console.log("Hey guys, I brought a" + ' ' +  drinkTray + "!");
+console.log(`Hey guys, I brought a ${drinkTray}!`);
+
