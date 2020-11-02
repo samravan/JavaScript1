@@ -2,7 +2,7 @@ let drinkTray = [];
 const drinkTypes = ['cola', 'lemonade', 'water'];
 let num = 0;
 for (let i = 0; i < 5; i++) {
-    drinkTray.push( " " + drinkTypes[num]);
+    drinkTray.push(drinkTypes[num]);
     if (i % 2 !== 0) {
         num++
     };

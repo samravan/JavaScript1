@@ -1,39 +1,43 @@
 function calculategrades(gradeInput) {
+    let result = 0;
     let gPercent = `${(gradeInput * 100) / 100}%`; //using this calculation to make the percentage of the grade.
     switch (Math.floor(gradeInput/10)) {    //Using Math.floor to round grades to largest integer and then read the reletive condition in the switch.
         case 9:
-        console.log(`You got a A (${gPercent})!`) 
-        break;
+            result = "A"; 
+            break;
         case 8:
-        console.log(`You got a B (${gPercent})!`)
-        break; 
+            result = "B"
+            break; 
         case 7:
-        console.log(`You got a C (${gPercent})!`)
-        break;
+            result = "C"
+            break;
         case 6:
-        console.log(`You got a D (${gPercent})!`)
-        break;
+            result = "D"
+            break;
         case 5:
-        console.log(`You got a E (${gPercent})!`)
-        break;
+            result = "E"
+            break;
         case 4:
-        console.log(`You got a F (${gPercent})!`)
-        break;
+            result = "F"
+            break;
         case 3:
-        console.log(`You got a F (${gPercent})!`)
-        break;
+            result = "F"
+            break;
         case 2:
-        console.log(`You got a F (${gPercent})!`)
-        break;
+            result = "F"
+            break;
         case 1:
-        console.log(`You got a F (${gPercent})!`)
-        break;
+            result = "F"
+            break;
         case 0:
-        console.log(`You got a F (${gPercent})!`)
-        break;
+            result = "F"
+            break;
     }
+   return `You got a ${result} (${gPercent})!`
 }
-calculategrades(96);
+let x = calculategrades(96);
+console.log(x);
 
-console.log(`${grades(1)}`)
+
+// console.log(`${grades(1)}`)
 
