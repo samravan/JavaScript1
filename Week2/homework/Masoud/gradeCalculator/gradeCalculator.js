@@ -22,7 +22,12 @@ function gradeCalculator(point) {
       grade = 'A';
       break;
   }
-return console.log("You got a " + grade + " (" + point + "%)!");//Show output in console
+return grade;
+
 }
+
 //use function
-gradeCalculator(60);
+let point = 60;
+let grade = gradeCalculator(point);
+
+console.log("You got a " + grade + " (" + point + "%)!");//Show output in console
