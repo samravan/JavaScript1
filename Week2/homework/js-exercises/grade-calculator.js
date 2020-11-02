@@ -35,7 +35,7 @@ function calculategrades(gradeInput) {
     }
    return `You got a ${result} (${gPercent})!`
 }
-let x = calculategrades(96);
+let x = calculategrades(60);
 console.log(x);
 
 
