@@ -22,7 +22,7 @@ function gradeCalculator(point) {
       grade = 'A';
       break;
   }
-return grade;
+return `You got a ${grade} (${point}%)!` ;
 
 }
 
@@ -30,4 +30,4 @@ return grade;
 let point = 60;
 let grade = gradeCalculator(point);
 
-console.log("You got a " + grade + " (" + point + "%)!");//Show output in console
+console.log(grade);//Show output in console
