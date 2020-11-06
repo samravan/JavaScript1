@@ -18,12 +18,14 @@ let books = [
 ];
 
 for (let i =0 ; i < books.length ; i++) {
+
+  console.log(books[i].title + ' by ' + books[i].author);
+
   if(books[i].alreadyRead) {
-    console.log(books[i].title + ' by ' + books[i].author);
     console.log('You already read \"' + books[i].title + '\"');
   } else {
-    console.log(books[i].title + ' by ' + books[i].author);
     console.log('You still need to read \"' + books[i].title + '\"');
   }
+  
   console.log('');
 }
