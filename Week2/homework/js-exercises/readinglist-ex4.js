@@ -21,7 +21,7 @@ let books = [
 
 books.forEach((element, index, array) => {
     console.log(element.title + " by " + element.author);
-    if (element.alreadyRead === true) {
+    if (element.alreadyRead) {
         console.log("You already read " + element.title)
     } else {
         console.log("You still need to read " + element.title)
