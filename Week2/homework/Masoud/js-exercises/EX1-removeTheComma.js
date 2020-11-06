@@ -8,9 +8,9 @@ console.log(myString.length);
 let changeStringToArray = [];
 for (let i = 0 ; i < myString.length; i++){
   if (myString[i] == ','){
-    changeStringToArray[i] =  ' ';
+    changeStringToArray.push(" ");
   } else {
-    changeStringToArray[i] = myString[i];
+    changeStringToArray.push(myString[i]);
   }
 }
 
