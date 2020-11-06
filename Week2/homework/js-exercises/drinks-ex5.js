@@ -13,5 +13,5 @@ while (drinkTray.length < 5) {
     pointer = 0;
   };
 };
-console.log(drinkTray);
+console.log(`Hey guys, I brought a ${drinkTray}!`);
 
