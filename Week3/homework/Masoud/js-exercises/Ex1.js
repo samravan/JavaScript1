@@ -1,8 +1,8 @@
 'use strict'
 
 function giveCompliment(name) {
-  const compliments = ['awesome', 'smart', 'perfect', 'strong', 'gratful', 'gorgeous', 'helpful', 'clever', 'handsome', 'great', 'cute'];
-  const selectOneCompliment = compliments[Math.round(Math.random()*10)];
+  const compliments = ['awesome', 'smart', 'perfect', 'strong', 'gratful', 'gorgeous', 'helpful', 'clever', 'handsome', 'great'];
+  const selectOneCompliment = compliments[Math.round(Math.random()*9)];
   return `You are ${selectOneCompliment}, ${name}!`;
 }
 
