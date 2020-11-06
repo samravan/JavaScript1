@@ -20,4 +20,5 @@ for(let i = 0 ; i < 5 ; i++) {
   }
 }
 
-console.log('Hey guys, I brought a ' + drinkTray + '!');
+const finalSentence = drinkTray.join(', ');
+console.log('Hey guys, I brought a ' + finalSentence + '!');
