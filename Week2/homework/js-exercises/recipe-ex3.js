@@ -4,6 +4,7 @@ let recipe = {
     serves: 2,
     ingredients : ["2 eggplants", "2 eggs", "1 garlic"]
 };
+let x = ['Meal name', 'Serves', 'Ingredients']
 //Method1:
 // for (let property in recipe) {
 //     console.log(property + ": " + recipe[property]);
@@ -20,7 +21,7 @@ let value = Object.values(recipe);
 
 for (let i = 0; i < Object.keys(recipe).length; i++) {
     
-    console.log(property[i] + ": " + value[i]);
+    console.log(x[i] + ": " + value[i]);
     
 };
 
