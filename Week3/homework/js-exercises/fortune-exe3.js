@@ -1,4 +1,4 @@
-const numChildren = [1, 2, 3, 4, 5];
+node const numChildren = [1, 2, 3, 4, 5];
 const partnerNames = ['Ali', 'Amir', 'Lili', 'Mina', 'Masood'];
 const locations = ['Iran', 'USA', 'Holland', 'UK', 'Jordan'];
 const jobs = ['Doctor', 'Programmer', 'Killer', 'Police', 'President'];

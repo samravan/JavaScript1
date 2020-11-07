@@ -7,7 +7,7 @@ function addToShoppingCart(item){
         shoppingCart.shift();
     }
 };
-    const result = console.log(`You bought ${shoppingCart}!`)
+    const result = console.log(`You bought ${shoppingCart}!`);
     return result;
 };
 addToShoppingCart('chocolate');
