@@ -4,60 +4,56 @@ function validateCreditNumber(num) {
     for(let i = 0; i < num.length; i++){
         array.push(num[i]);
     }
-  
-   
-    
-    //Soloution 1
-    
-    const items = num.split('')
 
-    if(num.length <= 16){
-        console.log("True");
-    } else{
-        console.log(`Invalid! The input ${num} should be 16 characters!`);
-    };
-
-    //All characters must be numbers
-
-    if(num.match(/^[0-9]+$/) != null){
-        console.log("true")
-    }else {
-        console.log(`Invalid! The input ${num} should contain only numbers!`)
-    }
-    
     //At least two diffrent numbers should be represented
     function similarity(array){
-        let firstItem = array[0]
-        let x = array.filter(elements => elements == firstItem).length
-        return x != array.length ? false : true;
-    }
-    console.log(similarity(array))
+            let firstItem = array[0]
+            let x = array.filter(elements => elements == firstItem).length != array.length ? true : false;
+            return x 
+        }
 
-    //The last number must be even
-    if(array.pop() % 2 == 0) {
-        console.log("the last is even");
-    }else{
-        console.log("the last is odd")
-    }
+        //The Sum of all the numbers must be greater than 16:
+        let sum = 0
+        for (let i = 0; i < array.length; i++){
+                let arrayInt = parseInt(array[i])
+                sum += arrayInt
+            }
+
+    switch(false){
+
+        //The length of the number
+        case num.length == 16:
+            console.log(`Invalid! The input ${num} should be 16 characters!`);
+            break;
+
+        //All characters must be numbers
+        case num.match(/^[0-9]+$/) != null:
+            console.log(`Invalid! The input ${num} should contain only numbers!`);
+            break;
+
+        //At least two diffrent numbers should be represented
+        case similarity(array) == true:
+            console.log(`Invalid! The input ${num} should contain at least 2 different types of numbers!`);
+            break;
+
+        //The last number must be even
+        case array.pop() % 2 == 0:
+            console.log(`Invalid! The last number of the  input ${num} should be even`);
+            break;
         
+        //The Sum of all the numbers must be greater than 16:
+        case sum > 16:
+            console.log(`Invalid! The sum of the input ${num} should be more than 16`);
+            break;
 
-    //Soloution2
+        default:
+            console.log(`Success! The input ${num} is a valid credit card number!`)
 
-    // switch(false){
-    // //The length of the number
-    //     case num.length <= 16:
-    //         console.log(`Invalid! The input ${num} should be 16 characters!`)
-    //     break;
-    //     //All characters must be numbers
-    //     case num.match(/^[0-9]+$/) != null:
-    //         console.log(`Invalid! The input ${num} should contain only numbers!`)
-    //     break;
-    //     //At least two diffrent numbers should be represented
-  
-
-     // };
+     };
+     
 };
 
 
-
-validateCreditNumber('6666666666666661');
+validateCreditNumber('6666666666661666');
+validateCreditNumber('a92332119c011112');
+validateCreditNumber('4444444444444444');
