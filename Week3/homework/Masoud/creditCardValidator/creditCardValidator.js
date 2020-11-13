@@ -17,7 +17,7 @@ const validateCreditNumber = (creditCardNumber) => {
     const index = [];
 
     for (let i = 0 ; i < creditCardNumber.length ; i++) {
-      if (creditCardNumber[i] == 0 || creditCardNumber[i] == 1 || creditCardNumber[i] == 2 || creditCardNumber[i] == 3 || creditCardNumber[i] == 4 || creditCardNumber[i] == 5 || creditCardNumber[i] == 6 || creditCardNumber[i] == 7 || creditCardNumber[i] == 8 || creditCardNumber[i] == 9) {
+      if (creditCardNumber[i].match(/[0-9]/g)) {
         
       } else {
         index.push('NaN');
@@ -94,6 +94,6 @@ const validateCreditNumber = (creditCardNumber) => {
   }
 };
 
-const creditCardNumber = '1254785985478568'; //Sample credit card number!
+const creditCardNumber = '6587458965845896'; //Sample credit card number!
 validateCreditNumber(creditCardNumber); //Call function
 
