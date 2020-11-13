@@ -2,11 +2,10 @@
 
 const validateCreditNumber = (creditCardNumber) => {
 
-  const numStringLength = creditCardNumber.length;
-
+  
   //Input must be 16 characters
   function checkLength(creditCardNumber) {
-    if (numStringLength !== 16){
+    if (creditCardNumber.length !== 16){
       return `Invalid! The input ${creditCardNumber} should contains 16 characters!`;
     } else {
       return 'success!';
@@ -17,7 +16,7 @@ const validateCreditNumber = (creditCardNumber) => {
   function checkType(creditCardNumber) {
     const index = [];
 
-    for (let i = 0 ; i < numStringLength ; i++) {
+    for (let i = 0 ; i < creditCardNumber.length ; i++) {
       if (creditCardNumber[i] == 0 || creditCardNumber[i] == 1 || creditCardNumber[i] == 2 || creditCardNumber[i] == 3 || creditCardNumber[i] == 4 || creditCardNumber[i] == 5 || creditCardNumber[i] == 6 || creditCardNumber[i] == 7 || creditCardNumber[i] == 8 || creditCardNumber[i] == 9) {
         
       } else {
@@ -37,7 +36,7 @@ const validateCreditNumber = (creditCardNumber) => {
   function atLeastTwo(creditCardNumber) {
     const index = [];
 
-    for (let i = 1 ; i < numStringLength - 1 ; i++) {
+    for (let i = 1 ; i < creditCardNumber.length - 1 ; i++) {
 
       if (creditCardNumber[0] !== creditCardNumber[i]) {
         index.push('NaN');
@@ -53,7 +52,7 @@ const validateCreditNumber = (creditCardNumber) => {
 
   //The last number must be even
   function mustEven(creditCardNumber) {
-    if (creditCardNumber[numStringLength-1] % 2 == 0) {
+    if (creditCardNumber[creditCardNumber.length-1] % 2 == 0) {
       return 'success!';
     } else {
       return `Invalid! The last number must be even`;
@@ -95,6 +94,6 @@ const validateCreditNumber = (creditCardNumber) => {
   }
 };
 
-const creditCardNumber = '879654785248754'; //Sample credit card number!
+const creditCardNumber = '1254785985478568'; //Sample credit card number!
 validateCreditNumber(creditCardNumber); //Call function
 
