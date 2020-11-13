@@ -8,7 +8,7 @@ const validateCreditNumber = (creditCardNumber) => {
     if (creditCardNumber.length !== 16){
       return `Invalid! The input ${creditCardNumber} should contains 16 characters!`;
     } else {
-      return 'success!';
+      return true;
     }
   }
 
@@ -27,7 +27,7 @@ const validateCreditNumber = (creditCardNumber) => {
     if (index.length !== 0){
       return `Invalid! The input ${creditCardNumber} should contains only numbers!`;
     } else {
-      return 'success!';
+      return true;
     }
 
   }
@@ -46,14 +46,14 @@ const validateCreditNumber = (creditCardNumber) => {
     if (index.length == 0){
       return `Invalid! The input ${creditCardNumber} should contains at least 2 different types of numbers!`;
     } else {
-      return 'success!';
+      return true;
     }
   }
 
   //The last number must be even
   function mustEven(creditCardNumber) {
     if (creditCardNumber[creditCardNumber.length-1] % 2 == 0) {
-      return 'success!';
+      return true;
     } else {
       return `Invalid! The last number must be even`;
     }
@@ -68,7 +68,7 @@ const validateCreditNumber = (creditCardNumber) => {
    if (sum < 16) {
      return `Invalid! The input ${creditCardNumber} should contains the numbers that must be greater than 16! `
    } else {
-     return 'success!';
+     return true;
    }
  }
 
@@ -82,7 +82,7 @@ const validateCreditNumber = (creditCardNumber) => {
   array.push(mustEven(creditCardNumber));
   array.push(sumOf(creditCardNumber));
   for (let i = 0 ; i < array.length ; i++) {
-    if (array[i] !== 'success!') {
+    if (array[i] !== true) {
       console.log(array[i]);
     } else {
       array2.push(array[i]);
