@@ -14,40 +14,22 @@ const validateCreditNumber = (creditCardNumber) => {
 
   //All characters must be numbers
   function checkType(creditCardNumber) {
-    const index = [];
-
     for (let i = 0 ; i < creditCardNumber.length ; i++) {
-      if (creditCardNumber[i].match(/[0-9]/g)) {
-        
-      } else {
-        index.push('NaN');
+      if (!creditCardNumber[i].match(/[0-9]/g)) {
+        return `Invalid! The input ${creditCardNumber} should contains only numbers!`;
       }
     }
-    
-    if (index.length !== 0){
-      return `Invalid! The input ${creditCardNumber} should contains only numbers!`;
-    } else {
-      return true;
-    }
-
+    return true;
   }
   
   //At least two different numbers should be represented
   function atLeastTwo(creditCardNumber) {
-    const index = [];
-
-    for (let i = 1 ; i < creditCardNumber.length - 1 ; i++) {
-
+    for (let i = 1 ; i < creditCardNumber.length ; i++) {
       if (creditCardNumber[0] !== creditCardNumber[i]) {
-        index.push('NaN');
+        return true;
       }
     }
-   
-    if (index.length == 0){
-      return `Invalid! The input ${creditCardNumber} should contains at least 2 different types of numbers!`;
-    } else {
-      return true;
-    }
+   return `Invalid! The input ${creditCardNumber} should contains at least 2 different types of numbers!`;
   }
 
   //The last number must be even
@@ -94,6 +76,6 @@ const validateCreditNumber = (creditCardNumber) => {
   }
 };
 
-const creditCardNumber = '6587458965845896'; //Sample credit card number!
+const creditCardNumber = '2222222222222224'; //Sample credit card number!
 validateCreditNumber(creditCardNumber); //Call function
 
