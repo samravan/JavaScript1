@@ -13,3 +13,4 @@ function addToShoppingCart(item){
 addToShoppingCart('chocolate');
 addToShoppingCart('waffles');
 addToShoppingCart('tea');
+addToShoppingCart('apple');
